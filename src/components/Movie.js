@@ -22,6 +22,7 @@ function Movie({ id, year, title, summary, poster, genres }) {
   );
 }
 
+//프로퍼티의 자료형과 필수여부 검사
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,

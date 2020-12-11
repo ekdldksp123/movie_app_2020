@@ -16,7 +16,7 @@ class Home extends React.Component{
     } = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
     this.setState({ movies, isLoading: false });
   };
-
+  //컴포넌트가 생성되자마자 API 데이터 받아오기
   componentDidMount(){
     this.getMovies();
   }
